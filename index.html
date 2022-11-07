@@ -4,21 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge Live Coding StartSe 02Out2022</title>
+    <title>Challenge Live Coding StartSe</title>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
-<body style=background-color:gray>
+<body>
+<nav>
+    <header>EDILE RODRIGUES</header>
+    <section class="nav-items">
+        <a href=#home>Home</a>
+        <a href=#about>About</a>
+        <a href=#form_section>Form</a>
+    </section>
+</nav>
+ 
+<section id="home">
+<div class="container">
+    <div class="column-left">
+        <h1>Only incredible projects</h1>
+        <p>
+            Contact us by below form to know more about our excelent services.
+        </p>
+        <hr>
+        <a id="CTA-button" href="#form_section">Start now</a>
+    </div>
 
-    <header  align="center">
-        <h1 style="color: blue;
-                font-size: 50px;">
-           Challenge Live Coding StartSe - 02Out2022
-        </h1>
-    </header>
+    <picture class="column-right">
+        <img src="loading-rings.gif" alt="ilustration" id="home-image">
+    </picture>
+</div>
+</section>
 
-     
- <form action="http://google.com">
-    <section align="center">
-        <h1>Interest Form</h1>
+<section id="about">
+    <div class="middle-container">
+        <h1>Some curious facts about me:</h1>
+                <p>
+                    <ol>
+                        <li>I'm lovely but a good fighter if it's necessary.</li>
+                        <li>The happiness for me is on a cold beer and a good book, in paper if it's possible.</li>
+                        <li>I have two Marys, and they're everything that import in my life.</li>
+                        <li>I believe on UFOs.</li>
+                        <li>My tech journey started by coincidence and my first lessons were var, let and const.</li>
+                        <li>I'm passionate for learning programming and studying python, react, node, etc.</li>
+                        <li>I hope that new technologies are coming to change the world and turn it on a better place to live.</li>
+                        <li>I believe that number 8 has a magic energy and I use this sometimes, like when typing lists.</li>
+                    </ol>
+                </p>
+    </div>
+</section>
+   
+<form id="form_section" action="http://google.com" >
+        <section>
+        <h2>Interest Survey</h2>
         <n>Type your name:</n>
         <input type="text" name="userName" size="40" placeholder="Coloque seu nome completo">
         </br></br>
@@ -27,29 +63,30 @@
         </br></br>
         <n>Tell us something about you:</n>
         <textarea name="userComment" cols="30" rows="4"></textarea>
-        <p>Do you do exercise dayly?</p>
-        <input type="radio" name="exercise" value=1>Yes>
-        <input type="radio" name="exercise" value=2>No>
-        <p>Where do you read about your favorite topics:</p>
-        <input type="checkbox" name="Books">Livros
-        <input type="checkbox" name="Web">Sites
-        <input type="checkbox" name="Apps">Aplicativos
-        <input type="checkbox" name="Magazines">Revistas
+        <p>What do you need from us?</p>
+        <input type="radio" name="exercise" value=1>Help to build a static site 
+        <input type="radio" name="exercise" value=2>Help to build a dinamic site
         </br></br>
-        <n>What kind of movie do you prefer?</n>
+        <p>Let us know more about your plain, what kind of project you need:</p>
+        <input type="checkbox" name="Landing">Landing page
+        <input type="checkbox" name="site">Institutional site
+        <input type="checkbox" name="portal">Portal
+        <input type="checkbox" name="hotsite">Hotsite
+        <input type="checkbox" name="store">Virtual store
+        </br></br>
+        <p>What kind of payment do you prefer?</p>
         <select name="moviePref">
             <option></option>
-            <option value=1>Comedy
-            <option value=2>Romance
-            <option value=3>Drama
-            <option value=4>Terror
-            <option value=5>Action
+            <option value=1>Money
+            <option value=2>Pix
+            <option value=3>Bank transfer
+            <option value=4>Check payable
         </select>
     </br></br>
-    <input type="submit" value="SEND">
-
+    <input id="form-button" type="submit" value="SEND">
     </section>
  </form>
+
 
 
 
